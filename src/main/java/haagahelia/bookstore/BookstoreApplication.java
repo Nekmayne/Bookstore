@@ -33,12 +33,7 @@ public class BookstoreApplication {
 			cRepository.save(category3);
 			cRepository.save(category4);
 			cRepository.save(category5);
-			
-			Book a = new Book("Historian kirja", "Joonas Niskanen", 2020, "1232323-21", category1);
-			Book b = new Book("Fantasia kirja", "Pekka Pouta", 2020 , "2112343-5", category2);
-			
-			repository.save(a);
-			repository.save(b);
+
 			
 			User user1 = new User("user", 
 			"$2a$10$YL4Blc9I4hBe506GcqBFYeEWdAyvtP0pOBlKMgmgazt4hcPcGWqW6", "email", "USER");
