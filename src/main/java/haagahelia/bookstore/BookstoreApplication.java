@@ -28,12 +28,13 @@ public class BookstoreApplication {
 			Category category4 = new Category("Action");
 			Category category5 = new Category("Horror");
 			
+			cRepository.deleteAll();
 			cRepository.save(category1);
 			cRepository.save(category2);
 			cRepository.save(category3);
 			cRepository.save(category4);
 			cRepository.save(category5);
-
+		
 			
 			User user1 = new User("user", 
 			"$2a$10$YL4Blc9I4hBe506GcqBFYeEWdAyvtP0pOBlKMgmgazt4hcPcGWqW6", "email", "USER");
