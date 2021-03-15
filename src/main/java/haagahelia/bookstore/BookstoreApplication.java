@@ -34,6 +34,8 @@ public class BookstoreApplication {
 			cRepository.save(category4);
 			cRepository.save(category5);
 			
+			uRepository.deleteAll();
+			
 			Book a = new Book("Historian kirja", "Joonas Niskanen", 2020, "1232323-21", category1);
 			Book b = new Book("Fantasia kirja", "Pekka Pouta", 2020 , "2112343-5", category2);
 			
